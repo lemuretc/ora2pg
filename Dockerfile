@@ -1,2 +1,2 @@
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/usr/bin/bash"]
 CMD [""]
