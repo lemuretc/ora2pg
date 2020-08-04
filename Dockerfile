@@ -58,6 +58,8 @@ ADD entrypoint.sh /usr/bin/entrypoint.sh
 
 WORKDIR /
 
-ENTRYPOINT ["entrypoint.sh"]
+#ENTRYPOINT ["entrypoint.sh"]
+#CMD ["ora2pg"]
 
-CMD ["ora2pg"]
+ENTRYPOINT ["/bin/ping"]
+CMD ["localhost"]
