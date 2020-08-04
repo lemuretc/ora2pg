@@ -1,4 +1,4 @@
 FROM perl:slim
 
-ENTRYPOINT ["vi"]
-CMD [""]
+ENTRYPOINT ["/usr/bin/env"]
+CMD ["bash"]
