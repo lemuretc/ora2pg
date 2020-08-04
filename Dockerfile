@@ -61,5 +61,5 @@ WORKDIR /
 #ENTRYPOINT ["entrypoint.sh"]
 #CMD ["ora2pg"]
 
-ENTRYPOINT ["/bin/ping"]
-CMD ["localhost"]
+ENTRYPOINT ["/bin/bash"]
+CMD [""]
