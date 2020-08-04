@@ -23,12 +23,12 @@ if [ "$1" = 'ora2pg' ]; then
 
     if [ -z "$2" ]; then
         echo "INFO: no args provided. Using default: '--debug -c $CONFIG_LOCATION --basedir $OUTPUT_LOCATION'"
-        ora2pg --debug -c ${CONFIG_LOCATION} --basedir ${OUTPUT_LOCATION}
+        #ora2pg --debug -c ${CONFIG_LOCATION} --basedir ${OUTPUT_LOCATION}
     else
         echo "INFO: executing: '$@'"
         exec "$@"
     fi
-    exit 0
+    #exit 0
 fi
 
 exec "$@"
