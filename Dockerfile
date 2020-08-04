@@ -60,4 +60,4 @@ WORKDIR /
 
 ENTRYPOINT ["entrypoint.sh"]
 
-CMD ["ora2pg"]
+#CMD ["ora2pg"]
