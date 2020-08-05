@@ -63,6 +63,11 @@ WORKDIR /
 
 
 
-ENTRYPOINT ["/usr/bin/env"]
+#ENTRYPOINT ["/usr/bin/env"]
+
+#CMD ["sh"]
+
+ADD run.sh /run.sh
+RUN chmod +x /*.sh
 USER root
-CMD ["sh"]
+CMD ["/run.sh"]
