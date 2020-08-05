@@ -1,9 +1,8 @@
-FROM perl:slim
+FROM perl
 
-ADD /assets /assets
-
-ADD entrypoint.sh /usr/bin/entrypoint.sh
+RUN bash
 
 WORKDIR /
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/env"]
+CMD ["sh"]
