@@ -1,4 +1,4 @@
-FROM perl:slim
+FROM perl
 
 ARG ORA2PG_VERSION=20.0
 
@@ -63,6 +63,6 @@ WORKDIR /
 
 
 
-ENTRYPOINT ["/bin/env"]
+ENTRYPOINT ["/usr/bin/env"]
 USER root
 CMD ["sh"]
